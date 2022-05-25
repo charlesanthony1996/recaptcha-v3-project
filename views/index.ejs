@@ -27,13 +27,13 @@
     </div>
 
     
-    <script src="https://www.google.com/recaptcha/api.js?render=6Ld5DhsgAAAAAPfQ73yZk6eBN1pVM6dNZQG5GpTn"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=site key here"></script>
     <script>
       grecaptcha.ready(function() {
         //the request function goes here
         //refer to https://www.npmjs.com/package/request
         //try node-fetch here man! implement the same thing yo!
-        grecaptcha.execute('6Ld5DhsgAAAAAPfQ73yZk6eBN1pVM6dNZQG5GpTn',  {action: "validate_captcha"})
+        grecaptcha.execute('site key here',  {action: "validate_captcha"})
         .then(function(token) {
           //add token here
           document.getElementById("g-recaptcha-response").value = token;

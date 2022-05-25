@@ -21,7 +21,7 @@ app.post("/captcha", function (req, res) {
         return res.json({"responseError": "something goes wrong"})
     }
 
-    const secretKey = "6Ld5DhsgAAAAAIuG61XZl89k7EFFLmN8zxMH4UTw";
+    const secretKey = "secret key here";
 
     const verificationURL = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
 
